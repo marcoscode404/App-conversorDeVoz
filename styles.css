@@ -1,0 +1,359 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple: #6b46c1;
+    --white: #fff;
+
+    --background: #f0f2f5;
+    --red: #E52E4D;
+    --blue: #5429CC;
+    --blue-light: #6933FF;
+    --text-title: #363F5F;
+    --text-body: #969CB3;
+    --green: #33CC95;
+
+    --shape: #FFFFFF;
+    --yellow: rgb(179, 177, 67);
+}
+
+    /* configurando o tamanho de fonts */
+    html {
+        /* 15px */
+        @media (max-width: 1080px) {
+            font-size: 93.75%;
+        }
+        /* 14px */
+        @media (max-width: 720px) {
+            font-size: 87.5%; 
+        }
+    }
+
+    body {
+        background: var(--background);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body, input, textarea, button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong {
+        font-weight: 600;
+    }
+
+    p {
+        color: var(--text-body);
+    }
+
+
+.main {
+    width: 100%;
+   
+    
+}
+.main h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text-title);
+}
+
+.container {
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    width: min(70rem, 90%);
+    background-color: var(--shape);
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+
+    
+    width: min(70rem, 95%);
+    height: 10rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--shape);
+    background-color: var(--text-title);
+    overflow-x: hidden;
+    padding: 1.5rem 2rem;
+    line-height: 2rem;
+
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+
+}
+
+form .input {
+    width: min(70rem, 100%);
+    height: auto;
+    outline: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 1.5rem;
+    margin: auto;
+    width: min(70rem, 90%);
+}
+
+.button-falar {
+    background-color: var(--green);
+    color: var(--shape);
+    width: 10rem;
+
+    height: 4rem;
+    border-radius: 0.25rem;
+
+    border: 1px solid #d7d7d7;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    
+      
+    transition: filter 0.2s;
+    font-weight: 600;
+}
+
+button:hover{
+    filter: brightness(0.9);
+}
+
+.button-stop{
+    background-color: var(--blue-light);
+    color: var(--shape);
+    width: 10rem;
+
+    height: 4rem;
+    border-radius: 0.25rem;
+
+    border: 1px solid #d7d7d7;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.div{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: min(70rem, 90%);
+    margin: auto;
+    gap: 2rem;
+}
+
+.buttonSaveNota {
+    background: var(--text-title);
+    color: var(--shape);
+    width: 10rem;
+
+    height: 4rem;
+    border-radius: 0.25rem;
+
+    border: 1px solid #d7d7d7;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+footer p {
+    color: var(--text-title);
+}
+footer p > span {
+    color: var(--blue-light);
+}
+
+
+/*  */
+
+
+.page-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.tz-link {
+    font-size: 1em;
+    color: #1da7da;
+    text-decoration: none;
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
+
+.container > p {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.app {
+    margin: 40px auto;
+}
+
+.app h3 {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-title);
+}
+.app > p{
+ 
+    text-align: center;
+}
+
+
+.app > ul {
+
+    background-color: var(--);
+    filter: brightness(0.9);
+    width: min(70rem, 95%);
+    height: 100%;
+     
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+    gap: 10px;
+ 
+
+}
+.app > ul li {
+    margin-bottom: 1rem;
+}
+
+.app ul .content {
+    background: var(--text-body);
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    color: var(--shape);
+   
+}
+
+
+.input-single textarea::placeholder {
+    color: var(--shape);
+}
+
+
+.input-single {
+    width: min(70rem, 95%);
+    margin: auto;
+}
+
+.input-single > textarea {
+    width: 100%;
+    height: auto;
+    resize: vertical;
+    line-height: var(--line-height);
+    white-space: normal;
+    outline: none;
+    background-color: var(--text-title);
+    color: var(--shape);
+    padding: 2rem;
+
+}
+
+
+#note-textarea {
+    border: 1px solid var(--shape);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#recording-instructions {
+    margin: 15px auto 60px;
+}
+
+#notes {
+    margin-left: 2rem;
+    padding-top: 20px;
+    list-style-type: none;
+
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: var(--text-body);
+    margin-bottom: 10px;
+    margin-left: 1rem;
+
+}
+
+
+
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+    color: var(--green);
+    
+    
+}
+
+.note .delete-note {
+    color: var(--red);
+}
+
+.note .content {
+    margin-bottom: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 25px;
+    }
+
+    .div {
+        flex-direction: column;
+    }
+    .div button {
+        width: 100%;
+    }
+ 
+}
+
+
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+    #bsaHolder{ display:none;}
+}

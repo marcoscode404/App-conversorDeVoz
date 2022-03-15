@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+   <div class="main">
+
+    <div class="container">
+        <p>Este App foi desenvolvido com uma API existente no google chrome,
+          Atualmente está em fase de experimentos e só funcionar no Browser 
+          do google chrome.
+        </p>
+        <h1>Texto em voz</h1>
+       
+        <form >
+          <div class="input" 
+            contenteditable
+            oninput="setText(event)
+          
+            ">
+            Insira seu texto Aqui!
+          </div>
+        </form>
+
+          <div class="buttons">
+              <button 
+              onclick="speak()" 
+              class="button-falar">Falar</button>
+              <button
+              class="button-stop"
+              onclick="stop()" 
+              >Parar</button>
+          
+          </div>
+
+    </div>
+
+    <!-- voz em texto -->
+    <div class="container">
+
+      <h1>Voz em texto</h1>
+      <p class="page-description">Um pequeno aplicativo que permite fazer anotações gravando sua voz</p>
+      <!-- <p><a class="tz-link" href="https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript">Read the full article on Tutorialzine »</a></p> -->
+
+      <h3 class="no-browser-support"> 
+          Desculpe, seu navegador não suporta a API Web Speech. Tente abrir esta demonstração no Google Chrome.
+      </h3>
+
+      <div class="app"> 
+          <h3>Adicione novas notas</h3>
+          <div class="input-single">
+              <textarea id="note-textarea" placeholder="Crie uma nova nota digitando ou usando o reconhecimento de voz." rows="6"></textarea>
+          </div>
+
+          <div class="div">
+            <button id="start-record-btn" class="button-falar" title="Start Recording">Inicie o Reconhecimento</button>
+            <button id="pause-record-btn" class="button-stop" title="Pause Recording">Parar Reconhecimento</button>
+            <button id="save-note-btn" class="buttonSaveNota" title="Save Note">Salvar nota</button>   
+          </div>
+          
+          <p id="recording-instructions">Pressione <strong>Iniciar Reconhecimento </strong>botão e permitir o acesso.</p>
+          
+          <h3>Minhas notas</h3>
+          <ul id="notes">
+              <li>
+                  <p class="no-notes">Você não tem nenhuma nota.</p>
+              </li>
+          </ul>
+
+      </div>
+
+  </div>
+
+
+  
+  <footer class="footer">
+    <p class="">
+        Todos Os direitos Reservados
+        <span class="text-gray-50">Colab Devs | viniCode</span>
+    </p>    
+  </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Only used for the demos ads. Please ignore and remove. --> 
+  <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
+
+
+
+
+
+   
+   
+    <script src="voztext.js"></script>
+    <script src="script.js"></script>
+   
+  </body>
+</html>
