@@ -239,6 +239,8 @@ footer p > span {
 
 .app > ul {
 
+    margin: auto;
+    list-style: none;
     background-color: var(--);
     filter: brightness(0.9);
     width: min(70rem, 95%);
@@ -298,12 +300,6 @@ footer p > span {
     margin: 15px auto 60px;
 }
 
-#notes {
-    margin-left: 2rem;
-    padding-top: 20px;
-    list-style-type: none;
-
-}
 
 .note .header {
     font-size: 0.9em;
@@ -319,7 +315,7 @@ footer p > span {
 .note .delete-note,
 .note .listen-note {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 1.5rem;
     color: var(--green);
     
     
