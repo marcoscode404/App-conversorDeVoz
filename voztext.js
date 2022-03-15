@@ -168,7 +168,7 @@ try {
       });
     }
     else {
-      html = '<li><p class="content">You don\'t have any notes yet.</p></li>';
+      html = '<li><p class="content">Você ainda \ não tem notas.</p></li>';
     }
     notesList.html(html);
   }
